@@ -17,6 +17,6 @@ cp ${input_folder}/*.${extension} ${input_folder}/${backup_folder}/
 
 cd ${input_folder}/
 
-tar -zcvf ${backup_archive_name} ${backup_folder}
+tar -zcvf ${backup_archive_name} ${backup_folder} &>/dev/null
 
 echo done
