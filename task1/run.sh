@@ -15,8 +15,6 @@ done
 mkdir ${input_folder}/${backup_folder}
 cp ${input_folder}/*.${extension} ${input_folder}/${backup_folder}/
 
-cd ${input_folder}/
-
-tar -zcvf ${backup_archive_name} ${backup_folder} &>/dev/null
+tar -zcvf ${backup_archive_name} ${input_folder}/${backup_folder} &>/dev/null
 
 echo done
