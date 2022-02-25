@@ -12,8 +12,25 @@ shift
 shift
 done
 
+touch /tmp/paths.txt
+
+find ${input_folder} -type d -printf "%P\0" > /tmp/paths.txt
+
 mkdir ${backup_folder}
-cp ${input_folder}/*.${extension} ${backup_folder}/
+cd ${backup_folder}
+
+xargs --null mkdir < /tmp/paths.txt &> /dev/null
+
+cd -
+
+touch /tmp/paths_files.txt
+
+find ${input_folder} -type f -name "*.${extension}" -printf "%P\n" > /tmp/paths_files.txt
+
+
+while IFS= read -r path; do
+    cp ${path} ${backup_folder}/${path} &> /dev/null
+done < /tmp/paths_files.txt
 
 tar -zcvf ${backup_archive_name} ${backup_folder} &>/dev/null
 
