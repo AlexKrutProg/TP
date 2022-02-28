@@ -21,7 +21,7 @@ cd ${backup_folder}
 
 xargs --null mkdir < /tmp/paths.txt &> /dev/null
 
-cd - &> /dev/null
+cd ${input_folder}
 
 touch /tmp/paths_files.txt
 
