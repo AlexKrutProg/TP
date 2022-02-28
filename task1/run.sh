@@ -29,7 +29,7 @@ find ${input_folder} -type f -name "*.${extension}" -printf "%P\n" > /tmp/paths_
 
 
 while IFS= read -r path; do
-    cp ${path} ${backup_folder}/${path} &> /dev/null
+    cp ${path} ${backup_folder}/${path}
 done < /tmp/paths_files.txt
 
 tar -zcvf ${backup_archive_name} ${backup_folder} &>/dev/null
