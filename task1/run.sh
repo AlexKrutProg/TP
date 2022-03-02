@@ -45,6 +45,8 @@ while IFS= read -r path; do
     cp "${path}" "${backup_folder}/${path}"
 done < /tmp/paths_files.txt
 
-tar -zcvf "${backup_archive_name}" "${backup_folder}" &>/dev/null
+cd "$init"
+
+tar zcf "${backup_archive_name}" "${backup_folder}" &> /dev/null
 
 echo done
