@@ -16,25 +16,31 @@ init=$( pwd )
 
 touch /tmp/paths.txt
 
-find ${input_folder} -type d -printf "%P\0" > /tmp/paths.txt
+find "${input_folder}" -type d -printf "%P\0" > /tmp/paths.txt
 
-mkdir ${backup_folder}
-cd ${backup_folder}
+# OK so far
+
+mkdir "${backup_folder}"
+cd "${backup_folder}"
 
 xargs --null mkdir < /tmp/paths.txt &> /dev/null
 
-cd ${input_folder}
+cd "$init"
+#cd ${input_folder}
+
+# OK so far
 
 touch /tmp/paths_files.txt
 
-find ${input_folder} -type f -name "*.${extension}" -printf "%P\n" > /tmp/paths_files.txt
+find "${input_folder}" -type f -name "*.${extension}" -printf "%P\n" > /tmp/paths_files.txt
 
 cd "$init"
+cd "$input_folder"
 
 while IFS= read -r path; do
-    cp ${path} ${backup_folder}/${path}
+    cp "${path}" "${backup_folder}/${path}"
 done < /tmp/paths_files.txt
 
-tar -zcvf ${backup_archive_name} ${backup_folder} &>/dev/null
+tar -zcvf "${backup_archive_name}" "${backup_folder}" &>/dev/null
 
 echo done
