@@ -12,6 +12,8 @@ shift
 shift
 done
 
+init=$( pwd )
+
 touch /tmp/paths.txt
 
 find ${input_folder} -type d -printf "%P\0" > /tmp/paths.txt
@@ -27,6 +29,7 @@ touch /tmp/paths_files.txt
 
 find ${input_folder} -type f -name "*.${extension}" -printf "%P\n" > /tmp/paths_files.txt
 
+cd "$init"
 
 while IFS= read -r path; do
     cp ${path} ${backup_folder}/${path}
