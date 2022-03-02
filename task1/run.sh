@@ -12,6 +12,10 @@ shift
 shift
 done
 
+backup_folder=$( readlink -f "$backup_folder" )
+input_folder=$( readlink -f "$input_folder" )
+
+
 init=$( pwd )
 
 touch /tmp/paths.txt
@@ -19,6 +23,7 @@ touch /tmp/paths.txt
 find "${input_folder}" -type d -printf "%P\0" > /tmp/paths.txt
 
 # OK so far
+# exit 1
 
 mkdir "${backup_folder}"
 cd "${backup_folder}"
@@ -27,8 +32,7 @@ xargs --null mkdir < /tmp/paths.txt &> /dev/null
 
 cd "$init"
 #cd ${input_folder}
-
-# OK so far
+#exit 1
 
 touch /tmp/paths_files.txt
 
