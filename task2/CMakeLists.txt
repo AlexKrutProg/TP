@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.0)
 
 project(C)
 
+find_package(GTest REQUIRED)
+find_package(Threads REQUIRED)
+
+
 add_custom_command( 
   OUTPUT ${PROJECT_SOURCE_DIR}/A/index.h
   COMMAND python ${PROJECT_SOURCE_DIR}/A/preparing.py  ${PROJECT_SOURCE_DIR}/A/index.h
@@ -19,6 +23,8 @@ target_include_directories(C PUBLIC ${PROJECT_SOURCE_DIR})
 add_executable(CTest ${PROJECT_SOURCE_DIR}/C/main_test.cpp)
 set_target_properties(CTest PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 target_include_directories(CTest PUBLIC ${PROJECT_SOURCE_DIR})
+
+include_directories(CTest PUBLIC ${GTEST_INCLUDE_DIRS})
 
 include_directories(${PROJECT_SOURCE_DIR}/B)
 add_subdirectory(B)
