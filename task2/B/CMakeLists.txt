@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.0)
 
-project(Mylib VERSION 1.0 LANGUAGES CXX)
+project(Mylib)
 
-add_library(${PROJECT_NAME} STATIC}
-
-target_sources(${PROJECT_NAME} PRIVATE src/lib.cpp)
+add_library(${PROJECT_NAME} SHARED src/lib.cpp)
+#install(TARGETS Mylib DESTINATION lib)
+#install(FILES lib.h DESTINATION include)
