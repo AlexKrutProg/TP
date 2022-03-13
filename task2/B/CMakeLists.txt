@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(Mylib)
-
-add_library(${PROJECT_NAME} SHARED src/lib.cpp)
-#install(TARGETS Mylib DESTINATION lib)
-#install(FILES lib.h DESTINATION include)
+add_library(B SHARED lib.cpp)
+#install(TARGETS B DESTINATION ${PROJECT_SOURCE_DIR}/lib)
+#install(FILES lib.h DESTINATION ${PROJECT_SOURCE_DIR}/include)
