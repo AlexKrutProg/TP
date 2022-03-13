@@ -1,5 +1,5 @@
-#include <A/index.h>
-#include <B/lib.h>
+#include "A/index.h"
+#include "B/lib.h"
 
 TEST(arr, test1) {
     ASSERT_EQ(arr[0], 1)
