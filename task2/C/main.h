@@ -1,4 +1,4 @@
-#include "../A/index.h"
+#include "A/index.h"
 //#include "B/lib.h"
 
 void print();
