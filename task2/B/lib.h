@@ -1,8 +1,7 @@
-#include <iostream>
+#ifndef LIB_H
+#define LIB_H
+#include <string>
 
-template<class T>
-long long last(T array);
 
-template<class T>
-long long first(T array);
-
+std::string create_love(std::string name);
+#endif
