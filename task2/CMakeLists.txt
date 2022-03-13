@@ -18,7 +18,7 @@ target_include_directories(C PUBLIC ${PROJECT_SOURCE_DIR})
 
 add_executable(CTest ${PROJECT_SOURCE_DIR}/C/main_test.cpp)
 set_target_properties(CTest PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
-
+target_include_directories(CTest PUBLIC ${PROJECT_SOURCE_DIR})
 
 include_directories(${PROJECT_SOURCE_DIR}/B)
 add_subdirectory(B)
