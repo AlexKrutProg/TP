@@ -8,6 +8,6 @@ TEST(ATest, test1) {
 }
 
 TEST(BTest, test2) {
-    ASSERT_EQ(create_love("Sonechka"), "Sonechka, I love you!");
+    ASSERT_EQ(create_love("Sonechka"), "Sonechka, I love you!!!");
 }
 
