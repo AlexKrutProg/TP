@@ -19,4 +19,4 @@ target_link_libraries(MainLib buffer)
 
 install(TARGETS Main DESTINATION bin)
 install(TARGETS MainLib DESTINATION bin)
-install(TARGETS lib/buffer.h DESTINATION lib)
+install(TARGETS include/buffer.h DESTINATION lib)
