@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.0)
 set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 
 set(CMAKE_CXX_COMPILER ${TOOLCHAIN}/aarch64-linux-gnu-g++)
-set(CMAKE_C_COMPILER ${TOOLCHAIN}/aarch64-linux-gnu-gcc)
 
 project(SimpleLibrary)
 
@@ -19,4 +18,4 @@ target_link_libraries(MainLib buffer)
 
 install(TARGETS Main DESTINATION bin)
 install(TARGETS MainLib DESTINATION bin)
-install(TARGETS include/buffer.h DESTINATION lib)
+install(DIRECTORY include DESTINATION lib)
