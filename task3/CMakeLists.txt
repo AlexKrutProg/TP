@@ -18,4 +18,5 @@ target_link_libraries(MainLib buffer)
 
 install(TARGETS Main DESTINATION bin)
 install(TARGETS MainLib DESTINATION bin)
-install(DIRECTORY include DESTINATION lib)
+install(DIRECTORY include DESTINATION ${CMAKE_INSTALL_RPREFIX})
+install(LIBRARY DESTINATION ${CMAKE_INSTALL_RPREFIX})
