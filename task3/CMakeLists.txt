@@ -17,5 +17,7 @@ add_executable(MainLib main_lib.cpp)
 target_link_libraries(MainLib buffer)
 
 install(TARGETS Main DESTINATION bin)
-install(TARGETS MainLib DESTINATION bin)
+install(TARGETS MainLib DESTINATION bin
+	LIBRARY DESTINATION ${CMAKE_INSTALL_RPATH} 
+)
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/include DESTINATION ${CMAKE_INSTALL_RPATH})
