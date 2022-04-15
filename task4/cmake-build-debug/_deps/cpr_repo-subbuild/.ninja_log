@@ -1,0 +1,21 @@
+# ninja log v5
+0	9	1650028580421137345	cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-mkdir	a65f0df324d1b6de
+0	9	1650028580421137345	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-mkdir	a65f0df324d1b6de
+9	1888	1650028582301294619	cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-download	8ca325e75d1f1eaa
+9	1888	1650028582301294619	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-download	8ca325e75d1f1eaa
+1888	2360	0	cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-update	8b4909af39b6cafb
+1888	2360	0	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-update	8b4909af39b6cafb
+2361	2363	1650028582773334143	cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-patch	212e72af67c0c43c
+2361	2363	1650028582773334143	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-patch	212e72af67c0c43c
+2363	2370	1650028582781334813	cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-configure	848a4f851e1da9b4
+2363	2370	1650028582781334813	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-configure	848a4f851e1da9b4
+2370	2373	1650028582785335148	cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-build	f1ca14d1cbe4ff6b
+2370	2373	1650028582785335148	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-build	f1ca14d1cbe4ff6b
+2373	2376	1650028582789335483	cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-install	20a3ecfef45e1dec
+2373	2376	1650028582789335483	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-install	20a3ecfef45e1dec
+2376	2379	1650028582789335483	cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-test	c44a10e0ceba337e
+2376	2379	1650028582789335483	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-test	c44a10e0ceba337e
+2379	2384	1650028582793335818	CMakeFiles/cpr_repo-populate-complete	45fec4ce0a049dad
+2379	2384	1650028582793335818	cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-done	45fec4ce0a049dad
+2379	2384	1650028582793335818	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/CMakeFiles/cpr_repo-populate-complete	45fec4ce0a049dad
+2379	2384	1650028582793335818	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-done	45fec4ce0a049dad

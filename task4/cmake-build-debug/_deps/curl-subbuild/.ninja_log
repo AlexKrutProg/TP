@@ -1,0 +1,21 @@
+# ninja log v5
+1	9	1650028594194295049	curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir	8d2ffe3c045b5779
+1	9	1650028594194295049	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir	8d2ffe3c045b5779
+9	1885	1650028596066453374	curl-populate-prefix/src/curl-populate-stamp/curl-populate-download	fd1953e0dd51b18c
+9	1885	1650028596066453374	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download	fd1953e0dd51b18c
+1885	1888	1650028596066453374	curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	dc367869e2850e49
+1885	1888	1650028596066453374	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	dc367869e2850e49
+1888	1890	1650028596070453712	curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	3dedca5e14081862
+1888	1890	1650028596070453712	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	3dedca5e14081862
+1890	1892	1650028596074454050	curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	c0e97fd61f9fd8e6
+1890	1892	1650028596074454050	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	c0e97fd61f9fd8e6
+1892	1894	1650028596074454050	curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	9f637285e322e273
+1892	1894	1650028596074454050	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	9f637285e322e273
+1894	1897	1650028596078454390	curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	1869f59564f63fbf
+1894	1897	1650028596078454390	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	1869f59564f63fbf
+1897	1899	1650028596078454390	curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	a0c9117815635310
+1897	1899	1650028596078454390	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	a0c9117815635310
+1899	1904	1650028596082454729	CMakeFiles/curl-populate-complete	da1646fc26a3c460
+1899	1904	1650028596082454729	curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	da1646fc26a3c460
+1899	1904	1650028596082454729	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate-complete	da1646fc26a3c460
+1899	1904	1650028596082454729	/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	da1646fc26a3c460

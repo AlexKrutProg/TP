@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/CMakeFiles/cpr_repo-populate"
+		},
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/CMakeFiles/cpr_repo-populate.rule"
+		},
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/CMakeFiles/cpr_repo-populate-complete.rule"
+		},
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-build.rule"
+		},
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-configure.rule"
+		},
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-download.rule"
+		},
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-install.rule"
+		},
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-patch.rule"
+		},
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-test.rule"
+		},
+		{
+			"file" : "/home/alexkrut/Repositories/TP/TP/task4/cmake-build-debug/_deps/cpr_repo-subbuild/cpr_repo-populate-prefix/src/cpr_repo-populate-stamp/cpr_repo-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cpr_repo-populate"
+		],
+		"name" : "cpr_repo-populate"
+	}
+}
