@@ -1,7 +1,3 @@
-//
-// Created by akhtyamovpavel on 5/1/20.
-//
-
 #include "LeapTestCase.h"
 
 #include <Functions.h>
@@ -20,6 +16,10 @@ TEST(LeapTestCase, BadMonth) {
 
 TEST(LeapTestCase, NoLeapYearOrdinaryMonth) {
     ASSERT_LE(GetMonthDays(1977, 11), 30);
+}
+
+TEST(LeapTestCase, OrdinaryYearOrdinaryMonth) {
+    ASSERT_LE(GetMonthDays(2022, 5), 31);
 }
 
 TEST(LeapTestCase, LeapYear400) {
