@@ -12,8 +12,7 @@ RUN useradd -m -s /bin/bash tp2022user
 USER root
 WORKDIR opt/techprog/
 COPY . opt/techprog/
-RUN mkdir build
-WORKDIR build/
+RUN mkdir build && cd build
 RUN cmake ..
 RUN make
 ENTRYPOINT python3 app.py --host 0.0.0.0 --port 8898
