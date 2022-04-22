@@ -1,11 +1,11 @@
 from ubuntu:20.04
 
 RUN apt-get update
-RUN apt-get install cmake
-RUN apt-get install make
-RUN apt-get install g++
-RUN apt-get intsall python
-RUN apt-get intsall pip3
+RUN apt-get -y install cmake
+RUN apt-get -y install make
+RUN apt-get -y install g++
+RUN apt-get -y intsall python
+RUN apt-get -y intsall pip3
 RUN pip3 install flask
 RUN useradd -m -s /bin/bash tp2022user
 USER tp2022user
