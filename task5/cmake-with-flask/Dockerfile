@@ -1,16 +1,16 @@
 from ubuntu:20.04
 
 RUN apt-get update
+RUN apt-get install -y libboost-dev libboost-program-options-dev libgtest-dev
 RUN apt-get -y install cmake
 RUN apt-get -y install make
 RUN apt-get -y install g++
 RUN apt-get install -y python3-pip
 RUN pip install flask
-#RUN useradd -m -s /bin/bash tp2022user
-#USER tp2022user
-USER root
+RUN useradd -m -s /bin/bash tp2022user
+USER tp2022user
+WORKDIR opt/techprog
 COPY . opt/techprog
-RUN cd opt/techprog
 RUN mkdir build
 RUN cd build
 RUN cmake ..
