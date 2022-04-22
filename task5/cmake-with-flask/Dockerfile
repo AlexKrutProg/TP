@@ -8,8 +8,8 @@ RUN apt-get install -y python3-pip
 RUN pip install flask
 RUN useradd -m -s /bin/bash tp2022user
 USER tp2022user
-WORKDIR /home/tp2022user
-COPY . /home/tp2022user
+WORKDIR /opt/techprog
+COPY . /opt/techprog
 RUN mkdir build
 RUN cd build
 RUN cmake ..
