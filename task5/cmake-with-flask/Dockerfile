@@ -8,7 +8,8 @@ RUN apt-get -y install g++
 RUN apt-get install -y python3-pip
 RUN pip install flask
 RUN useradd -m -s /bin/bash tp2022user
-USER tp2022user
+#USER tp2022user
+USER root
 WORKDIR opt/techprog
 COPY . opt/techprog
 RUN mkdir build
