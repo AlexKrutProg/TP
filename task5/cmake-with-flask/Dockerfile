@@ -1,0 +1,22 @@
+from ubuntu:20.04
+
+RUN apt-get update
+RUN apt-get install cmake
+RUN apt-get install make
+RUN apt-get install g++
+RUN apt-get intsall python
+RUN apt-get intsall pip3
+RUN pip3 install flask
+RUN useradd -m -s /bin/bash tp2022user
+USER tp2022user
+WORKDIR /home/tp2020user
+COPY . /home/tp2020user
+RUN mkdir build
+RUN cd build
+RUN cmake ..
+RUN make
+ENTRYPOINT python3 app.py --host 0.0.0.0 --port 8898
+EXPOSE 8898
+
+
+
