@@ -13,7 +13,7 @@ USER root
 WORKDIR opt/techprog/
 COPY . opt/techprog/
 RUN mkdir build
-WORKDIR opt/techprog/build/
+WORKDIR build/
 RUN cmake ..
 RUN make
 ENTRYPOINT python3 app.py --host 0.0.0.0 --port 8898
