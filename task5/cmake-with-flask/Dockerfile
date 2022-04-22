@@ -10,8 +10,8 @@ RUN pip install flask
 #RUN useradd -m -s /bin/bash tp2022user
 #USER tp2022user
 USER root
-WORKDIR opt/techprog
 COPY . opt/techprog
+WORKDIR opt/techprog
 RUN mkdir build && cd build && cmake .. && make
 ENTRYPOINT python3 app.py --host 0.0.0.0 --port 8898
 EXPOSE 8898
