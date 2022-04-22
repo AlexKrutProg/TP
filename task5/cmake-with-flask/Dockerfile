@@ -9,8 +9,8 @@ RUN pip install flask
 #RUN useradd -m -s /bin/bash tp2022user
 #USER tp2022user
 USER root
-COPY . /opt/techprog
-WORKDIR /opt/techprog
+COPY . opt/techprog
+RUN cd opt/techprog
 RUN mkdir build
 RUN cd build
 RUN cmake ..
