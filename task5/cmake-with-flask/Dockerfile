@@ -4,7 +4,6 @@ RUN apt-get update
 RUN apt-get -y install cmake
 RUN apt-get -y install make
 RUN apt-get -y install g++
-RUN apt-get -y intsall python3
 RUN apt-get -y intsall python3-pip
 RUN pip install flask
 RUN useradd -m -s /bin/bash tp2022user
