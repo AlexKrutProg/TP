@@ -9,6 +9,7 @@ RUN apt-get install -y python3-pip
 RUN pip install flask
 RUN useradd -m -s /bin/bash tp2022user
 USER tp2022user
+RUN chown tp2022user opt/techprog
 COPY . opt/techprog
 WORKDIR opt/techprog
 RUN mkdir build && cd build && cmake .. && make
