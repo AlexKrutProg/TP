@@ -1,13 +1,12 @@
 from ubuntu:20.04
 
 RUN apt-get update
-RUN apt-get -y install libboost-dev libboost-program-options-dev libgtest-dev
+#RUN apt-get -y install libboost-dev libboost-program-options-dev libgtest-dev
 RUN apt-get -y install cmake
 RUN apt-get -y install make
 RUN apt-get -y install g++
 RUN apt-get install -y python3-pip
 RUN pip install flask
-#RUN chown tp2022user opt/techprog
 COPY . opt/techprog
 WORKDIR opt/techprog
 RUN mkdir build && cd build && cmake .. && make
