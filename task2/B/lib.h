@@ -1,7 +1,4 @@
-#ifndef LIB_H
-#define LIB_H
+#pragma once
 #include <string>
 
-
 std::string create_love(std::string name);
-#endif
