@@ -12,22 +12,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build
-      run: |
-        cd task-ci
-        ./run.sh
-    - name: Test
-        uses: /akhtyamovpavel/ActionGtestReport@v0.0.9
+      - uses: actions/checkout@v3
+      - name: Build
+        run: |
+            cd task-ci
+            ./run.sh
+      - name: Test
+        uses: akhtyamovpavel/ActionGtestReport@v0.0.9
         with: 
-            exec-path: "bin/CTestExe"
-            report-path: "report.xml"
-            working-directory: "task-ci"
-    - name: UploadArtifacts
+          exec-path: "bin/CTestExe"
+          report-path: "report.xml"
+          working-directory: "task-ci"
+      - name: UploadArtifacts
         uses: actions/upload-artifact@v2.2.3
         with:
-            name: Distributive
-            path: task-ci/build/task-ci/exe
+          name: Distributive
+          path: task-ci/build/task-ci/exe
             
             
             
